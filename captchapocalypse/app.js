@@ -3,7 +3,7 @@ const fs = require("fs");
 const resolveCaptcha = require("./resolveCaptcha");
 
 const username = "admin";
-const rockyou = fs.readFileSync("./rockyou100.txt", {encoding: "utf8", falg: "r"});
+const rockyou = fs.readFileSync("./rockyou100.txt", {encoding: "utf8", flag: "r"});
 const logs = ["admin", ""];
 
 const initPayload = async (username, password) => {
