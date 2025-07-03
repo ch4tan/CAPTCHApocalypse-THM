@@ -31,7 +31,6 @@ async function recognizeText() {
 
     const corrected = text.split('').map(char => confusionMap[char] || char).join('');
 
-    
     await worker.terminate();
 
     return corrected;
