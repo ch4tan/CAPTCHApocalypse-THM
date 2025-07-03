@@ -22,7 +22,7 @@ async function recognizeText() {
     });
 
     const {
-    data: { text },
+      data: { text },
     } = await worker.recognize(processedImage);
 
     const confusionMap = {
